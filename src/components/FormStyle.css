@@ -1,0 +1,95 @@
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 6px; /* Rounded borders */
+  height: 40px; /* Unified height */
+  line-height: 20px; /* Unified line height */
+}
+
+/* Focused state: change border color to #381FE0 */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #381FE0; /* Change border color to #381FE0 when focused */
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 200px; /* Adjust this height as needed */
+}
+
+.form-group button {
+  background-color: #381FE0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px; /* Rounded corners for buttons */
+}
+
+.form-group button:hover {
+  background-color: #4E38E4;
+}
+
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 0 10px; /* Only horizontal padding */
+  height: 40px; /* Unified height */
+  box-sizing: border-box;
+}
+
+.file-input-wrapper label {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 5px 10px; /* Adjust vertical padding to align with text field */
+  display: flex; /* Flexbox to align items */
+  align-items: center; /* Vertically center the label */
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  font-size: 12px; /* Smaller font */
+  margin-top: 0; /* Remove any extra margin at the top */
+  margin-bottom: 0; /* Ensure there's no extra margin at the bottom */
+  box-sizing: border-box; /* Ensures padding and border don't affect size */
+}
+
+.file-input-wrapper input[type="file"] {
+  display: none; /* Hidden, only the label triggers the file input */
+}
+
+/* Focused state for the file input field */
+.file-input-wrapper input[type="file"]:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #381FE0; /* Change border color to #381FE0 when focused */
+}
+
+/* Focused state for label or entire file input wrapper */
+.file-input-wrapper:focus-within {
+  border-color: #381FE0; /* Ensure the wrapper gets the border color when input is focused */
+}
+
+.file-name {
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+}

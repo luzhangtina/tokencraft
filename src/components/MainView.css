@@ -1,0 +1,44 @@
+.main-view {
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 1;
+  margin-left: 250px; 
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  transition: margin-left 0.3s ease; 
+}
+
+.main-view.collapsed {
+  margin-left: 60px; 
+}
+
+.main-view-header {
+  background-color: white; 
+  color: #4E38E4; 
+  padding: 10px 20px 20px 20px; 
+  font-size: 18px; 
+  font-weight: bold;
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  border-radius: 10px; 
+}
+
+.main-view-header h1 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.main-view-header p {
+  color: #8C8D8C; 
+  font-size: 12px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.main-view-body {
+  flex-grow: 1;
+  padding: 10px 20px; 
+  overflow-y: auto;
+}

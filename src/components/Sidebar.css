@@ -1,0 +1,57 @@
+.sidebar {
+    width: 250px;
+    background-color: #381FE0;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.collapsed {
+    width: 60px;
+  }
+  
+  .sidebar .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background-color: #4E38E4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .sidebar a.active {
+    background-color: #4E38E4;
+  }
+  
+  .sidebar a:hover {
+    background-color: #4E38E4;
+  }
+
+  @import '~@fortawesome/fontawesome-free/css/all.min.css';
+  

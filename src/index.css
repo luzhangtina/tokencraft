@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
